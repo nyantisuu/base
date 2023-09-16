@@ -1,0 +1,57 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+
+model User {
+  id          Int      @id @default(autoincrement())
+  accountId   String   @unique
+  account     String   @unique
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  Sync        Sync?
+  Link        Link[]
+  @@map("users")
+}
+
+model Link {
+  id          Int      @id @default(autoincrement())
+  serverId    String
+  userId      Int      
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  User        User     @relation(fields: [userId], references: [id])
+  @@unique([userId, serverId])
+  @@map("links")
+}
+
+model Sync {
+  id          Int      @id @default(autoincrement())
+  userId      Int      @unique
+
+  User        User     @relation(fields: [userId], references: [id])
+  @@map("syncs")
+}
+
+
+
+
+model Sound {
+  command     String   @unique
+  id          String   @unique
+  link        String
+  description String   @default("none")
+  filename    String   @unique
+
+  @@map("sounds")
+}
