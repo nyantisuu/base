@@ -1,5 +1,5 @@
 import { google } from "googleapis";
-import * as pkey from ".secret/googleApi.json";
+import * as pkey from "../../.secret/googleApi.json";
 
 const SCOPES = ['https://www.googleapis.com/auth/drive.file'];
 

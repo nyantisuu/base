@@ -1,6 +1,4 @@
-import { isLogged } from "@BOT/settings/botConnection"
-
-export async function LoadLoop() {
+export async function LoadLoop(isLogged:boolean) {
   const points = 5
   const character = "."
   
