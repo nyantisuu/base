@@ -1,6 +1,6 @@
 import { uploadFile } from "@BOT/settings/googleDrive";
 import axios from "axios";
-import { MyData } from "../mainCommand";
+import { MyData } from "..";
 import { Sound } from "@prisma/client";
 import { wrongAttachmentNumber, wrongAttachmentType, existentSong } from "./errors";
 import comment from "@BOT/lib/actions/comment";

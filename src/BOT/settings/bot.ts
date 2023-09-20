@@ -1,7 +1,7 @@
 import { LoadLoop, wait } from "@BOT/assets/scripts/loading";
 import { Client, GatewayIntentBits } from "discord.js";
 import { config } from "dotenv";
-import { loadNyaCommands } from "../lib/watchers/commands/mainCommand";
+import { loadCommands } from "../lib/watchers/commands";
 import { run } from "@BOT/run";
 
 config()
@@ -29,7 +29,7 @@ export async function botLogin(){
 		run()
 	})
 	
-	loadNyaCommands()
+	loadCommands()
 	botClient.login(TOKEN)
 	while (!isLogged){await LoadLoop(isLogged)}
 }

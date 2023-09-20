@@ -1,4 +1,3 @@
-export * from './helper'
 export * from './nonExistentSong'
 export * from './notInVoiceChannel'
 export * from './existentSong'

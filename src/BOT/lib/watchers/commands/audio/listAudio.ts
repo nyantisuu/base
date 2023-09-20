@@ -1,4 +1,4 @@
-import { MyData } from "../mainCommand";
+import { MyData } from "..";
 import answer from "@BOT/lib/actions/answer";
 import { AudioRepository } from "@API/audios/audios.repository";
 import { PrismaService } from "@API/utils/prisma/prisma.service";

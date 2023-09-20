@@ -1,4 +1,4 @@
-import { MyData } from "../mainCommand";
+import { MyData } from "..";
 import { nonExistentSong } from "./errors";
 import { deleteFile } from "@BOT/settings/googleDrive";
 import comment from "@BOT/lib/actions/comment";

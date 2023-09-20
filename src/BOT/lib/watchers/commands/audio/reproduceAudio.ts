@@ -1,7 +1,7 @@
 import { createAudioPlayer, createAudioResource, joinVoiceChannel } from "@discordjs/voice";
 import axios from "axios";
 import { nonExistentSong, notInVoiceChannel } from "./errors";
-import { MyData } from "../mainCommand";
+import { MyData } from "..";
 import comment from "@BOT/lib/actions/comment";
 import { AudioRepository } from "@API/audios/audios.repository";
 import { PrismaService } from "@API/utils/prisma/prisma.service";
