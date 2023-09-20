@@ -1,12 +1,12 @@
 import { createAudioPlayer, createAudioResource, joinVoiceChannel } from "@discordjs/voice";
 import axios from "axios";
 import { nonExistentSong, notInVoiceChannel } from "./errors";
-import { MyData } from "..";
 import comment from "@BOT/lib/actions/comment";
 import { AudioRepository } from "@API/audios/audios.repository";
 import { PrismaService } from "@API/utils/prisma/prisma.service";
+import { CmdData } from "..";
 
-export async function reproduceAudio(data:MyData){
+export default async function playAudio(data:CmdData){
     const voiceChannel = data.message.member.voice.channel
     if(!voiceChannel) return notInVoiceChannel(data.message)
     

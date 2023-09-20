@@ -1,17 +1,17 @@
-import { reproduceAudio } from "./reproduceAudio";
-import { saveAudio } from "./saveAudio";
-import { MyData } from "..";
-import { listAudio } from "./listAudio";
-import { removeAudio } from "./removeAudio";
+import saveAudio from "./saveAudio";
+import playAudio from "./playAudio";
+import listAudio from "./listAudio";
+import removeAudio from "./removeAudio";
 import HelperBuilder from "@BOT/lib/builders/functions/helperBuilder";
 import { Message } from "discord.js";
+import { CmdData } from "..";
 
-export default async function audioCommand(data:MyData){
+export default async function audioCommand(data:CmdData){
     const cmd = data.lastCmds.shift()
 
     if(cmd === "save")return saveAudio(data)
     
-    if(cmd === "play")return reproduceAudio(data)
+    if(cmd === "play")return playAudio(data)
 
     if(cmd === "list")return listAudio(data)
 

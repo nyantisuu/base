@@ -1,13 +1,13 @@
 import { uploadFile } from "@BOT/settings/googleDrive";
 import axios from "axios";
-import { MyData } from "..";
 import { Sound } from "@prisma/client";
 import { wrongAttachmentNumber, wrongAttachmentType, existentSong } from "./errors";
 import comment from "@BOT/lib/actions/comment";
 import { AudioRepository } from "@API/audios/audios.repository";
 import { PrismaService } from "@API/utils/prisma/prisma.service";
+import { CmdData } from "..";
 
-export async function saveAudio(data:MyData){
+export default async function saveAudio(data:CmdData){
     const {attachments:attach} = data.message
     const cmd = data.lastCmds.shift();
     const description = data.lastCmds.join(" ")

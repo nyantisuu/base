@@ -1,11 +1,11 @@
-import { MyData } from "..";
+import { CmdData } from "..";
 import { nonExistentSong } from "./errors";
 import { deleteFile } from "@BOT/settings/googleDrive";
 import comment from "@BOT/lib/actions/comment";
 import { PrismaService } from "@API/utils/prisma/prisma.service";
 import { AudioRepository } from "@API/audios/audios.repository";
 
-export async function removeAudio(data:MyData){
+export default async function removeAudio(data:CmdData){
     const audioRepository = new AudioRepository(new PrismaService)
     const cmdExist = await audioRepository.getSound(data.lastCmds[0])
     if (!cmdExist) return nonExistentSong(data.message)
