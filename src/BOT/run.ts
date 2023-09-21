@@ -1,9 +1,7 @@
 // import mineServer from "./discord/channels/mine-info";
 // import { loadCommander } from "./settings/commander";
 import { titleCLI } from "@CLI/titleCLI";
-import { botLogin } from "@BOT/settings/bot";
 import ServerSelector from "./lib/selectors/servers";
-import { GuildTextBasedChannel, TextBasedChannel } from "discord.js";
 
 // export const botJson = jsonSettings.loadBot()
 // titleCLI(botJson.name)
