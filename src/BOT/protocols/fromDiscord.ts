@@ -1,4 +1,4 @@
-import { Message } from "discord.js";
+import { GuildBasedChannel, GuildTextBasedChannel, Message } from "discord.js";
 
 type T = Pick<Message, 
     'content'    | 'attachments' | 

@@ -1,20 +1,57 @@
 import { botClient } from "@BOT/settings/bot"
-import { MyMessage } from "@BOT/protocols/fromDiscord"
+import { GuildBasedChannel } from "discord.js"
 
-async function getChannelsNamed(channelName:string, content:MyMessage, debug?:boolean){
-    const server_list = botClient.guilds.cache
-	server_list.forEach(server => {
-	    try {
-            const machannel = server.channels.cache.find(channel => channel.name === channelName) as any
-            machannel.send(content)
-            console.log(`Message sent to ${machannel.name} on: ${server.name}\n`)
-        } catch (error) {
-            if(debug) return console.log(error)
-            console.log(`Error while sending to ${server.name}\nfor more details, run function with [true] as last parameter\n`)
+export default class ServerSelector{
+    private servers = botClient.guilds.cache
+
+    getServerList(resumed:boolean = true){
+        if(resumed){
+            return this.servers.map(server =>{
+                return {name: server.name, id: server.id}
+            })
         }
-    })
+        else{
+            return this.servers
+        }
+    }
+
+    getServerByName(name:string){
+        return this.servers.find(server => server.name === name)
+    }
+    
+    getServerById(id:string){
+        return this.servers.find(server => server.id === id)
+    }
+
+    getAllChannelsInServer(serverId:string, channelType?:ChannelType):GuildBasedChannel[]{
+        const arr:GuildBasedChannel[] = []
+        const server = this.servers.get(serverId)
+        server.channels.cache.forEach(channel => {
+            selectChannelType(channel, channelType, arr)
+        })
+        return arr
+    }
+
+    getAllChannelsNamed(name:string , channelType?:ChannelType):GuildBasedChannel[] {
+        let arr:GuildBasedChannel[] = []
+        this.servers.forEach((server) => {
+            const channels = server.channels.cache.filter(channel => (channel.name === name))
+            channels.forEach(channel => {
+                selectChannelType(channel, channelType, arr)
+            })})
+        return arr
+    }
 }
-const allServers = {
-    getChannelsNamed
+
+type ChannelType = "textAll"| "textOnly" | "voice" | "dm" | "thread";
+
+function selectChannelType(channel:GuildBasedChannel, channelType:ChannelType, arr: GuildBasedChannel[]){
+    if(channelType){
+        if(channel.isTextBased() && channelType === "textAll")return arr.push(channel)
+        if(channel.isTextBased() && !channel.isVoiceBased() && channelType === "textOnly")return arr.push(channel)
+        if(channel.isVoiceBased() && channelType === "voice")return arr.push(channel)
+        if(channel.isDMBased() && channelType === "dm")return arr.push(channel)
+        if(channel.isThread() && channelType === "thread")return arr.push(channel)
+        if(channel.isThread() && channelType === "thread")return arr.push(channel)
+    } else {arr.push(channel)}
 }
-export default allServers

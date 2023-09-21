@@ -2,6 +2,8 @@
 // import { loadCommander } from "./settings/commander";
 import { titleCLI } from "@CLI/titleCLI";
 import { botLogin } from "@BOT/settings/bot";
+import ServerSelector from "./lib/selectors/servers";
+import { GuildTextBasedChannel, TextBasedChannel } from "discord.js";
 
 // export const botJson = jsonSettings.loadBot()
 // titleCLI(botJson.name)
@@ -11,7 +13,9 @@ import { botLogin } from "@BOT/settings/bot";
 
 export async function run(){
 	try {
-		// mineServer.status("edit")
+		const selector = new ServerSelector
+		console.log(selector.getServerList())
+
 	} catch (error) {
 		console.log(error);
 	}
