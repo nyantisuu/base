@@ -11,9 +11,10 @@ As tecnologias usadas foram: Nest, Typescript, PrismaORM, PostgreSQL, Commander,
 - Consegue reproduzir sons salvos na nuvem e nos servidores do Discord.
 - CLI via commander para automação via shellscript etc (esse foi o principal motivo para eu ter criado o bot).
 
-<h2>Essa ideia nasceu do minecraft!</h2>
+<h2>Um pouco sobre!</h2>
  
 <img align="left" width="240px" src="https://i.imgur.com/k4Fu7T3.gif">
 <p align="justify">
-    <h3>helloo test3</h3>
+    <h3>A ideia nasceu do Minecraft!</h3>
+    Tudo começou com um servidor que eu criei, com o passar dos dias fui criando shellscripts e automações como backup, criação de um CLI para iniciar o servidor etc. Então eu queria também automatizar o status do servidor num servidor de discord com meus amigos (mostrando se estava online, qual foi o ultimo momento de funcionamento e o ultimo backup) e a solução para isso foi a criação do Nyantisuu!.
 </p>
