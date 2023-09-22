@@ -1,5 +1,5 @@
 # Nyantisuu!
-
+<img src="https://raw.githubusercontent.com/Nyantise/Nyantise/main/assets/nyantisuuBanner.png">
 Um bot para Discord com integração API (controle seu próprio bot via requisições HTTP). Possui app client em Flutter e Vue.js (ambos em desenvolvimento) => [Repositório](https://github.com/Nyantise/nyantisuu-front).
 Documentação feita com Vitepress, podendo ser acessada neste [link](https://nyantisuu.netlify.app).
 
@@ -12,7 +12,7 @@ As tecnologias usadas foram: Nest, Typescript, PrismaORM, PostgreSQL, Commander,
 
 
 ### A ideia nasceu do Minecraft! 
-<img align="left" width="240px" src="https://images.emojiterra.com/google/noto-emoji/unicode-15/animated/1f41d.gif"/>
+<img align="left" width="240px" src="https://i.imgur.com/k4Fu7T3.gif"/>
 Tudo começou com um servidor que eu criei, com o passar dos dias fui criando shellscripts e automações como:<br>
 - Backup.<br>
 - Abrir portas.<br>
