@@ -2,7 +2,7 @@
 <img src="https://raw.githubusercontent.com/Nyantise/Nyantise/main/assets/nyantisuuBanner.png"/>
 
 
-Um bot para Discord com integração API (controle seu próprio bot via requisições HTTP). Possui app client em Flutter e Vue.js (ambos em desenvolvimento) => [Repositório](https://github.com/Nyantise/nyantisuu-front).
+Um bot para Discord com integração API (controle seu próprio bot via requisições HTTP). Possui app client em Flutter e Vue.js (ambos em desenvolvimento) => [Repositório](https://github.com/Nyantise/nyantisuu-front).<br/>
 Documentação feita com Vitepress, podendo ser acessada neste [link](https://nyantisuu.netlify.app).
 
 As tecnologias usadas foram: Nest, Typescript, PrismaORM, PostgreSQL, Commander, GoogleAPI e [Discord.JS](https://discord.js.org).
