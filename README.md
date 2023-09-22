@@ -12,4 +12,6 @@ As tecnologias usadas foram: Nest, Typescript, PrismaORM, PostgreSQL, Commander,
 - CLI via commander para automação via shellscript etc (esse foi o principal motivo para eu ter criado o bot).
 
  <h2>Essa ideia nasceu do minecraft!</h2>
- <img align="right" width="240px" src="https://i.imgur.com/k4Fu7T3.gif">
+ 
+ <img align="left" width="240px" src="https://i.imgur.com/k4Fu7T3.gif">
+ <p align="justify">hey hello test</p>
