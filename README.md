@@ -20,4 +20,4 @@ Tudo começou com um servidor que eu criei, com o passar dos dias fui criando sh
 - Abrir portas.<br>
 - Criação de um CLI para iniciar o servidor etc.<br>
 
-Acabou vindo a ideia de automatizar o status num servidor de discord com meus amigos (mostrando se estava online, qual foi o ultimo momento de funcionamento e o ultimo backup) e a solução para isso foi a criação do Nyantisuu!.
+Acabou vindo a ideia de automatizar o status num servidor de discord com meus amigos (mostrando se estava online, qual foi o ultimo momento de funcionamento e o ultimo backup) e a solução para isso foi a criação do Nyantisuu!
