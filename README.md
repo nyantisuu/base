@@ -14,7 +14,7 @@ As tecnologias usadas foram: Nest, Typescript, PrismaORM, PostgreSQL, Commander,
 <h2>Um pouco sobre!</h2>
  
 <img align="left" width="240px" src="https://i.imgur.com/k4Fu7T3.gif">
-<p align="justify">
+<p align="right">
 <h3>A ideia nasceu do Minecraft!</h3>
 Tudo começou com um servidor que eu criei, com o passar dos dias fui criando shellscripts e automações como:<br>
 - Backup.<br>
