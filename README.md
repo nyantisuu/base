@@ -15,10 +15,9 @@ As tecnologias usadas foram: Nest, Typescript, PrismaORM, PostgreSQL, Commander,
 
 
 ### A ideia nasceu do Minecraft! 
-<img align="left" width="240px" src="https://i.imgur.com/k4Fu7T3.gif"/>
 Tudo começou com um servidor que eu criei, com o passar dos dias fui criando shellscripts e automações como:<br>
 - Backup.<br>
 - Abrir portas.<br>
 - Criação de um CLI para iniciar o servidor etc.<br>
 
-Acabou vindo a ideia de automatizar o status num servidor de discord com meus amigos (mostrando se estava online, qual foi o ultimo momento de funcionamento e o ultimo backup) e a solução para isso foi a criação do Nyantisuu!
+Acabou surgindo a ideia de automatizar o status num servidor de discord com meus amigos (mostrando se estava online, qual foi o ultimo momento de funcionamento e o ultimo backup) e a solução para isso foi a criação do Nyantisuu!
