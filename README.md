@@ -2,11 +2,11 @@
 <img src="https://raw.githubusercontent.com/Nyantise/Nyantise/main/assets/nyantisuuBanner.png"/>
 
 
-Uma Framework TS para criação de Discord e Telegram Bots com integração API (controle seu próprio bot via requisições HTTP). Possuirá app client de exemplo feito em Flutter (em desenvolvimento) => [Repositório](https://github.com/Nyantise/nyantisuu-front).<br/>
+Uma Framework TS para criação de Discord e Telegram Bots com integração API (controle seu próprio bot via requisições HTTP). Possuirá app client de exemplo feito em Flutter (em desenvolvimento) - [Repositório](https://github.com/Nyantise/nyantisuu-client).<br/>
 
 Para guia de instalação, configuração e documentação, acesse este [link](https://nyantisuu.netlify.app).
 
-As tecnologias usadas foram: Nest, Typescript, PrismaORM, PostgreSQL, Commander, GoogleAPI e [Discord.JS](https://discord.js.org).
+As tecnologias usadas foram: Nest, Typescript, PrismaORM, PostgreSQL, Commander e [Discord.JS](https://discord.js.org).
 - Classes construtoras e seletoras, arquitetura, organização e clareza de código que é difícil encontrar em tutoriais e documentação relacionados a criação de discord bots.
 - envia textos simultâneos em canais e servidores múltiplos, atualiza conteúdo, envia mensagens temporárias, apaga múltiplas mensagens, etc.
 - CLI via commander para automação via shellscript etc (esse foi o principal motivo para eu ter criado o bot).
