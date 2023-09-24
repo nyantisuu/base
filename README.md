@@ -12,12 +12,35 @@ As tecnologias usadas foram: Nest, Typescript, PrismaORM, PostgreSQL, Commander,
 - CLI via commander para automação via shellscript etc (esse foi o principal motivo para eu ter criado o bot).
 
 ## Checklist
-- [x] 
+- [x] Builder para helpers (Mensagens para ajudar o user a ver quais os comandos e usos do bot, etc).
+- [ ] Builder para comandos e subcomandos.
+- [ ] Builder para rotas API.
+- [ ] Builder base para Actions.
+- [x] Selector para Servidores e Canais.
+- [ ] Selector para Users e Cargos.
+- [ ] Builder para Watchers.
+- [ ] Reformular command e helper Builders para terem uma integração afim de 
 
 ### Legenda
-- Builder - Classes construtoras, elas podem consumir outras bibliotecas ou não, elas trazem uma sintaxe ainda mais facilitada e podem construir qualquer coisa, desde botões, fila de botões para enviar em um embed do discord até mesmo criar novos comandos para o bot.
-- Selector - Classes feitas principalmente para consumir funções confusas e complicadas. Seu uso resume-se a selecionar algo, desde servidores que o seu bot tem acessos a users e canais dentro deles.
-- Watcher - Classes usadas para criar Observadores de eventos, usados principalmente para criar funções e ações Event-Driven, Exemplo de evento (Um novo user entrou no servidor).
+- **Builder** - Classes construtoras, elas podem consumir outras bibliotecas ou não, elas trazem uma sintaxe ainda mais facilitada e podem construir qualquer coisa, desde botões, fila de botões para enviar em um embed do discord até mesmo criar novos comandos para o bot.
+- **Selector** - Classes feitas principalmente para consumir funções confusas e complicadas. Seu uso resume-se a selecionar algo, desde servidores que o seu bot tem acessos a users e canais dentro deles.
+- **Watcher** - Classes usadas para criar Observadores de eventos, usados principalmente para criar funções e ações Event-Driven, Exemplo de evento (Um novo user entrou no servidor).
+- **Actions** - Nada mais que Ações que o bot performa, querendo ou não as bibliotecas não trazem algo mais direto, Nyantisuu! da um wrap nessas bibliotecas e te entrega essas coisas prontas, com Nyantisuu é tão simples quanto:
+```javascript
+const message = new MessageBuilder;
+
+message("Hello everyone!")
+  .addLinkButton("I'm the 1st Button!", "https://www.google.com")
+  .addLinkButton("I'm the 2nd Button!", "https://www.google.com")
+  .embedAddTitle("Important!")
+
+  //then you could send to a channel with id:
+  .toChannelWithId(ID)
+  //or you can send ir to multiple servers with channels with same name like:
+  .toAllChannelsNamed("geral")
+  //or you could just send to your main server like:
+  .toMainServerOnChannel("geral")
+```
 
 ### A ideia nasceu do Minecraft! 
 Tudo começou com um servidor que eu criei, com o passar dos dias fui criando shellscripts e automações como:<br>
