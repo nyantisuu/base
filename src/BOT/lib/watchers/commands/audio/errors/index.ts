@@ -1,5 +1,0 @@
-export * from './nonExistentSong'
-export * from './notInVoiceChannel'
-export * from './existentSong'
-export * from './wrongAttachmentNumber'
-export * from './wrongAttachmentType'

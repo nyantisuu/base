@@ -20,10 +20,21 @@
     "noFallthroughCasesInSwitch": false,
     "allowJs": true,
     "paths": {
-      "@BOT/*": ["src/BOT/*"],
       "@API/*": ["src/API/*"],
       "@CLI/*": ["src/CLI/*"],
-      "@DB/*": ["src/DB/*"],
+
+      "@DiscordSettings/*": ["src/BOT/discord/settings/*"],
+      "@DiscordActions/*": ["src/BOT/discord/lib/actions/*"],
+      "@DiscordBuilders/*": ["src/BOT/discord/lib/builders/*"],
+      "@DiscordSelectors/*": ["src/BOT/discord/lib/selectors/*"],
+      "@DiscordWatchers/*": ["src/BOT/discord/lib/watchers/*"],
+
+      "@TelegramSettings/*": ["src/BOT/telegram/settings/*"],
+      "@TelegramActions/*": ["src/BOT/telegram/lib/actions/*"],
+      "@TelegramBuilders/*": ["src/BOT/telegram/lib/builders/*"],
+      "@TelegramSelectors/*": ["src/BOT/telegram/lib/selectors/*"],
+      "@TelegramWatchers/*": ["src/BOT/telegram/lib/watchers/*"],
+
     },
     "plugins": [
       {

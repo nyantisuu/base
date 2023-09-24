@@ -1,4 +1,4 @@
-import { botClient } from "@BOT/settings/bot"
+import { botClient } from "@DiscordSettings/bot"
 import { GuildBasedChannel } from "discord.js"
 
 export default class ServerSelector{

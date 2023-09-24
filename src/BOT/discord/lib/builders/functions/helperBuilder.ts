@@ -1,4 +1,4 @@
-import answer from "@BOT/lib/actions/answer";
+import answer from "@DiscordActions/answer";
 import { Message } from "discord.js";
 
 export function wrapCss(text:string){

@@ -1,7 +1,6 @@
-import { botClient } from "@BOT/settings/bot";
-import audioCommand from "./audio";
+import HelperBuilder from "@DiscordBuilders/functions/helperBuilder";
+import { botClient } from "@DiscordSettings/bot";
 import { Message } from "discord.js";
-import HelperBuilder from "@BOT/lib/builders/functions/helperBuilder";
 
 //Main
 export function loadCommands(){
@@ -11,7 +10,7 @@ export function loadCommands(){
         if(!data)return;
 
         //Commands -->
-        if(data.cmd === "audio")return audioCommand(data);
+        // if(data.cmd === "example")return audioCommand(data);
 
         helper(data.message);
     });

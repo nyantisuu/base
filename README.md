@@ -27,21 +27,8 @@ As tecnologias usadas foram: Nest, Typescript, PrismaORM, PostgreSQL, Commander 
 - **Selector** - Classes feitas principalmente para consumir funções confusas e complicadas. Seu uso resume-se a selecionar algo, desde servidores que o seu bot tem acessos a users e canais dentro deles.
 - **Watcher** - Classes usadas para criar Observadores de eventos, usados principalmente para criar funções e ações Event-Driven, Exemplo de evento (Um novo user entrou no servidor).
 - **Actions** - Nada mais que Ações que o bot performa, querendo ou não as bibliotecas não trazem algo mais direto, Nyantisuu! da um wrap nessas bibliotecas e te entrega essas coisas prontas, com Nyantisuu é tão simples quanto:
-```javascript
-const message = new MessageBuilder;
+<img src="https://raw.githubusercontent.com/Nyantise/Nyantise/main/assets/nyantisuuExample.png"/>
 
-message("Hello everyone!")
-  .addLinkButton("I'm the 1st Button!", "https://www.google.com")
-  .addLinkButton("I'm the 2nd Button!", "https://www.google.com")
-  .embedAddTitle("Important!")
-
-// Então você conseguirá mandar para um servidor especifico com o ID:
-  .toChannelWithId(ID)
-// Ou para multiplos servidores, em canais com nomes identicos como:
-  .toAllChannelsNamed("geral")
-// Ou apenas no seu servidor principal, se vocé tiver definido ele nas configurações:
-  .toMainServerOnChannel("geral")
-```
 
 ### A ideia nasceu do Minecraft! 
 Tudo começou com um servidor que eu criei, com o passar dos dias fui criando shellscripts e automações como:<br>
