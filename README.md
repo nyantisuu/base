@@ -6,10 +6,11 @@ Uma Framework TS para criação de Discord e Telegram Bots com integração API 
 
 Para guia de instalação, configuração e documentação, acesse este [link](https://nyantisuu.netlify.app).
 
+## Sobre
 As tecnologias usadas foram: Nest, Typescript, PrismaORM, PostgreSQL, Commander e [Discord.JS](https://discord.js.org).
-- Classes construtoras e seletoras, arquitetura, organização e clareza de código que é difícil encontrar em tutoriais e documentação relacionados a criação de discord bots.
-- envia textos simultâneos em canais e servidores múltiplos, atualiza conteúdo, envia mensagens temporárias, apaga múltiplas mensagens, etc.
-- CLI via commander para automação via shellscript etc (esse foi o principal motivo para eu ter criado o bot).
+- Possui baseado em classes, arquitetura, organização e clareza de código que é difícil encontrar em tutoriais e documentação relacionados a criação de discord bots.
+- Envia textos simultâneos em canais e servidores múltiplos, atualiza conteúdo, envia mensagens temporárias, apaga múltiplas mensagens, etc.
+- Possui CLI via commander para automação via shellscript etc (esse foi o principal motivo para eu ter criado o bot).
 
 ## Checklist
 - [x] Builder para helpers (Mensagens para ajudar o user a ver quais os comandos e usos do bot, etc).
