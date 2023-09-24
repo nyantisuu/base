@@ -30,9 +30,9 @@ As tecnologias usadas foram: Nest, Typescript, PrismaORM, PostgreSQL, Commander 
 <img src="https://raw.githubusercontent.com/Nyantise/Nyantise/main/assets/nyantisuuExample.png"/>
 
 
-### A ideia nasceu do Minecraft! 
+### A ideia nasceu do Minecraft!
 Tudo começou com um servidor que eu criei, com o passar dos dias fui criando shellscripts e automações como:<br>
-- Backup.<br>
+- Backup na nuvem.<br>
 - Abrir portas.<br>
 - Criação de um CLI para iniciar o servidor etc.<br>
 
