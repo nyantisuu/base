@@ -34,11 +34,11 @@ message("Hello everyone!")
   .addLinkButton("I'm the 2nd Button!", "https://www.google.com")
   .embedAddTitle("Important!")
 
-  //then you could send to a channel with id:
+// Então você conseguirá mandar para um servidor especifico com o ID:
   .toChannelWithId(ID)
-  //or you can send ir to multiple servers with channels with same name like:
+// Ou para multiplos servidores, em canais com nomes identicos como:
   .toAllChannelsNamed("geral")
-  //or you could just send to your main server like:
+// Ou apenas no seu servidor principal, se vocé tiver definido ele nas configurações:
   .toMainServerOnChannel("geral")
 ```
 
