@@ -26,7 +26,7 @@ As tecnologias usadas foram: Nest, Typescript, PrismaORM, PostgreSQL, Commander 
 - **Builder** - Classes construtoras, elas podem consumir outras bibliotecas ou não, elas trazem uma sintaxe ainda mais facilitada e podem construir qualquer coisa, desde botões, fila de botões para enviar em um embed do discord até mesmo criar novos comandos para o bot.
 - **Selector** - Classes feitas principalmente para consumir funções confusas e complicadas. Seu uso resume-se a selecionar algo, desde servidores que o seu bot tem acessos a users e canais dentro deles.
 - **Watcher** - Classes usadas para criar Observadores de eventos, usados principalmente para criar funções e ações Event-Driven, Exemplo de evento (Um novo user entrou no servidor).
-- **Actions** - Nada mais que Ações que o bot performa, querendo ou não as bibliotecas não trazem algo mais direto, Nyantisuu! da um wrap nessas bibliotecas e te entrega essas coisas prontas, com Nyantisuu é tão simples quanto:
+- **Actions** - Nada mais que Ações que o bot performa, querendo ou não as bibliotecas não trazem algo mais direto, Nyantisuu! da um wrap nessas bibliotecas e te entrega essas coisas prontas, com o Nyuu é tão simples quanto:
 <img src="https://raw.githubusercontent.com/Nyantise/Nyantise/main/assets/nyantisuuExample.png"/>
 
 
