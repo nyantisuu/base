@@ -1,0 +1,33 @@
+services:
+
+  bot:
+    build: .
+    container_name: bot
+    depends_on:
+      - database
+    env_file:
+      - .env
+    networks:
+      - bot-network
+    ports:
+      - 3000:3000
+
+  database:
+    image: postgres
+    container_name: database
+    networks:
+      - bot-network
+    volumes:
+      - postgres-volume:/var/lib/postgresql/data
+    ports:
+      - 5433:5432
+    environment:
+      - POSTGRES_PASSWORD=postgres
+
+
+networks:
+  bot-network: 
+  
+
+volumes:
+  postgres-volume:
